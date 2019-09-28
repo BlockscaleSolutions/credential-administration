@@ -25,11 +25,6 @@ const buildCerts = (certTemplate, students) => {
         newCert.recipient.email = students[student].email
         newCert.id = uuid()
         newCert.issuedOn = new Date().toISOString()
-
-        console.log(newCert.issuedOn)
-        console.log(newCert.issuedOn)
-        console.log(newCert.issuedOn)
-
         certs.push(newCert)
     }
 
